@@ -6,12 +6,15 @@
   "scripts": {
     "serve": "webpack serve",
     "build": "webpack",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "lint-staged"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@types/node": "18.0.0",
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
@@ -24,6 +27,7 @@
     "eslint-webpack-plugin": "^3.2.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "mini-css-extract-plugin": "^2.6.1",
     "pinia": "^2.0.23",
     "postcss": "^8.4.17",
@@ -41,5 +45,8 @@
   "dependencies": {
     "vue": "^3.2.41",
     "vue-router": "4"
+  },
+  "lint-staged": {
+    "*.{ts, js, vue}": "eslint --fix"
   }
 }
