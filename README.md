@@ -4,6 +4,14 @@
 
 项目基于 webpack 5 实现了 vue3 + ts 的项目搭建，采用了 vue3 最新相关技术栈 vue-router4 以及 pinia
 
+## 项目使用
+修改git 远程地址
+```js
+git remote set-url origin 远程地址
+git remote -v // 查看地址信息
+
+```
+
 ## 项目目录
 
 ```
